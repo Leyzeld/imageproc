@@ -7,7 +7,7 @@ def Spectrum(shift):
     f_sh = np.abs(shift)
     min_val = np.amin(f_sh)
     f_sh[f_sh == 0] = min_val
-    spectrum = 40*np.log10(f_sh)
+    spectrum = 30*np.log10(f_sh)
     return spectrum, min_val
 
 def DFFTnp(pic, f_name):
